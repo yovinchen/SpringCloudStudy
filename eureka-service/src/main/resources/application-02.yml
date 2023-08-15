@@ -1,0 +1,17 @@
+server:
+  port: 8802
+spring:
+  application:
+    name: eurekaserver
+eureka:
+  instance:
+    hostname: eureka02
+    prefer-ip-address: false
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    fetch-registry: true
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://eureka01:8801/eureka, http://eureka02:8802/eureka
+  server:
+    enable-self-preservation: false
