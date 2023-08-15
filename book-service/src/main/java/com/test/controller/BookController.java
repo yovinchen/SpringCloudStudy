@@ -1,12 +1,13 @@
 package com.test.controller;
 
 import com.test.service.BookService;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.awt.print.Book;
+import com.test.entity.Book;
 
 /**
  * ClassName: BookController
@@ -16,6 +17,7 @@ import java.awt.print.Book;
  * @Create 2023/8/14 17:11
  */
 @RestController
+@EnableEurekaClient
 public class BookController {
 
     @Resource

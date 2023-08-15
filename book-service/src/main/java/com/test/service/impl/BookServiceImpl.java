@@ -5,7 +5,7 @@ import com.test.service.BookService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.awt.print.Book;
+import com.test.entity.Book;
 
 /**
  * ClassName: BookServiceImpl
