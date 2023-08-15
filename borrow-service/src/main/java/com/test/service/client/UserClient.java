@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author yovinchen
  * @Create 2023/8/15 16:54
  */
-@FeignClient("userservice")
-//声明为userservice服务的HTTP请求客户端
+//fallback参数指定为我们刚刚编写的实现类
+@FeignClient(value = "userservice", fallback = UserFallbackClient.class)
 public interface UserClient {
 
     //路径保证和其他微服务提供的一致即可
