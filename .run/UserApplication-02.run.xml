@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="UserApplication-02" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="用户服务">
+    <envs>
+      <env name="server.port" value="8102" />
+    </envs>
+    <module name="user-service" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.test.UserApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

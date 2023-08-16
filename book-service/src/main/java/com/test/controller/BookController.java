@@ -23,6 +23,7 @@ public class BookController {
 
     @RequestMapping("/book/{bid}")
     Book findBookById(@PathVariable("bid") int bid) {
+        System.out.println("调用图书服务");
         return service.getBookById(bid);
     }
 }

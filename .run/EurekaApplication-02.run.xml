@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="EurekaApplication-02" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="Eureka集群">
+    <envs>
+      <env name="spring.profiles.active" value="02" />
+    </envs>
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.test.EurekaApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
