@@ -3,11 +3,6 @@ server:
 spring:
   application:
     name: bookservice
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://43.143.164.194:3306/mac
-    username: mac
-    password: mactest
 eureka:
   client:
     serviceUrl:

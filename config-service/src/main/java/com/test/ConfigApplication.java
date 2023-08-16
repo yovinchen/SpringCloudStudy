@@ -2,18 +2,19 @@ package com.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
- * ClassName: BookApplication
+ * ClassName: ConfigApplication
  * Package: com.test
  *
  * @author yovinchen
- * @Create 2023/8/14 16:23
+ * @Create 2023/8/16 09:06
  */
 @SpringBootApplication
-public class BookApplication {
+@EnableConfigServer
+public class ConfigApplication {
     public static void main(String[] args) {
-        SpringApplication.run(BookApplication.class,args);
+        SpringApplication.run(ConfigApplication.class, args);
     }
 }
