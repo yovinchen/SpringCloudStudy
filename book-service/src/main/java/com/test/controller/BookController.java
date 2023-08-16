@@ -1,12 +1,13 @@
 package com.test.controller;
 
 import com.test.service.BookService;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
 import com.test.entity.Book;
 
 /**
@@ -17,14 +18,15 @@ import com.test.entity.Book;
  * @Create 2023/8/14 17:11
  */
 @RestController
-@EnableEurekaClient
 public class BookController {
 
     @Resource
     BookService service;
 
     @RequestMapping("/book/{bid}")
-    Book findBookById(@PathVariable("bid") int bid){
+    Book findBookById(@PathVariable("bid") int bid,
+                      HttpServletRequest request){
+        System.out.println(request.getHeader("Test"));
         return service.getBookById(bid);
     }
 }

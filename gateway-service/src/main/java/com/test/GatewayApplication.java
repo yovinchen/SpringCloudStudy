@@ -2,19 +2,17 @@ package com.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- * ClassName: UserApplication
+ * ClassName: GatewayApplication
  * Package: com.test
  *
  * @author yovinchen
- * @Create 2023/8/14 16:26
- */
+ * @Create 2023/8/16 08:52
+*/
 @SpringBootApplication
-@EnableEurekaClient
-public class UserApplication {
+public class GatewayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(UserApplication.class, args);
+        SpringApplication.run(GatewayApplication.class,args);
     }
 }

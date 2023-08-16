@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * ClassName: com.test.entity.UserBorrowDetail
+ * ClassName: entity.com.test.filter.UserBorrowDetail
  * Package: PACKAGE_NAME
  *
  * @author yovinchen
