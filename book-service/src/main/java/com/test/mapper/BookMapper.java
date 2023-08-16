@@ -2,8 +2,7 @@ package com.test.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
-
-import java.awt.print.Book;
+import com.test.entity.Book;
 
 /**
  * ClassName: BookMapper
