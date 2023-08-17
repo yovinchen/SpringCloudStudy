@@ -1,7 +1,9 @@
 package com.test.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.alibaba.fastjson.JSONObject;
+import com.test.entity.User;
 import com.test.entity.UserBorrowDetail;
 import com.test.service.BorrowService;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.io.IOException;
+import java.util.Collections;
 
 
 /**
@@ -32,8 +34,15 @@ public class BorrowController {
     }
 
     @RequestMapping("/borrow2/{uid}")
-    UserBorrowDetail findUserBorrows2(@PathVariable("uid") int uid) {
-        return service.getUserBorrowDetailByUid(uid);
+    @SentinelResource(value = "findUserBorrows2", blockHandler = "test")
+    UserBorrowDetail findUserBorrows2(@PathVariable("uid") int uid) throws InterruptedException {
+        throw new RuntimeException();
+    }
+
+    UserBorrowDetail test(int uid, BlockException e) {
+//        输出降级异常
+        System.out.println(e.getClass());
+        return new UserBorrowDetail(new User(), Collections.emptyList());
     }
 
     @RequestMapping("/blocked")
@@ -45,7 +54,7 @@ public class BorrowController {
         return object;
     }
 
-//    @RequestMapping("/test")
+    //    @RequestMapping("/test")
 //    @SentinelResource(value = "test", fallback = "except",    //fallback指定出现异常时的替代方案
 //            blockHandler = "blocked",
 ////            特别注意这种方式会在没有配置blockHandler的情况下，将Sentinel机制内（也就是限流的异常）的异常也一并处理了，如果配置了blockHandler，那么在出现限流时，依然只会执行blockHandler指定的替代方案（因为限流是在方法执行之前进行的）
@@ -60,11 +69,10 @@ public class BorrowController {
 //        return t.getMessage();
 //    }
     @RequestMapping("/test")
-    @SentinelResource("test")   //注意这里需要添加@SentinelResource才可以，用户资源名称就使用这里定义的资源名称
-    String findUserBorrows2(@RequestParam(value = "a", required = false) String a,
-                            @RequestParam(value = "b", required = false) String b,
-                            @RequestParam(value = "c",required = false) String c) {
-        return "请求成功！a = "+a+", b = "+b+", c = "+c;
+    @SentinelResource("test")
+    //注意这里需要添加@SentinelResource才可以，用户资源名称就使用这里定义的资源名称
+    String findUserBorrows2(@RequestParam(value = "a", required = false) String a, @RequestParam(value = "b", required = false) String b, @RequestParam(value = "c", required = false) String c) {
+        return "请求成功！a = " + a + ", b = " + b + ", c = " + c;
     }
 
     //模拟慢调用

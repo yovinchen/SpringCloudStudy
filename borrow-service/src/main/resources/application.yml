@@ -28,3 +28,6 @@ spring:
       # 关闭Context收敛，这样被监控方法可以进行不同链路的单独控制
       web-context-unify: false
       block-page: /blocked
+feign:
+  circuitbreaker:
+    enabled: true
