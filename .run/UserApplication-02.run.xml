@@ -2,6 +2,7 @@
   <configuration default="false" name="UserApplication-02" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="用户服务">
     <envs>
       <env name="server.port" value="8102" />
+      <env name="spring.cloud.nacos.discovery.cluster-name" value="Chengdu" />
     </envs>
     <module name="user-service" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.test.UserApplication" />
