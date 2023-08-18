@@ -17,17 +17,23 @@ spring:
         # 将ephemeral修改为false，表示非临时实例（用于持续监控）
         ephemeral: false
         cluster-name: Chengdu
-        namespace: dd668135-0bfe-489f-ab2b-24aefb21d156
     loadbalancer:
       nacos:
         enabled: true
-    sentinel:
-      transport:
-        # 添加监控页面地址即可
-        dashboard: localhost:8858
-      # 关闭Context收敛，这样被监控方法可以进行不同链路的单独控制
-      web-context-unify: false
-      block-page: /blocked
-feign:
-  circuitbreaker:
-    enabled: true
+seata:
+  # 注册
+  registry:
+    # 使用Nacos
+    type: nacos
+    nacos:
+      # 使用Seata的命名空间，这样才能正确找到Seata服务，由于组使用的是SEATA_GROUP，配置默认值就是，就不用配了
+      namespace: c0495138-b5b3-440d-8f1c-dc8cc9ba5fbc
+      username: nacos
+      password: nacos
+  # 配置
+  config:
+    type: nacos
+    nacos:
+      namespace: c0495138-b5b3-440d-8f1c-dc8cc9ba5fbc
+      username: nacos
+      password: nacos

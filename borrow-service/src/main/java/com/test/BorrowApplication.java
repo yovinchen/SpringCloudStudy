@@ -1,5 +1,6 @@
 package com.test;
 
+import io.seata.spring.annotation.datasource.EnableAutoDataSourceProxy;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -12,6 +13,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Create 2023/8/14 16:25
  */
 @EnableFeignClients
+@EnableAutoDataSourceProxy
 @SpringBootApplication
 public class BorrowApplication {
     public static void main(String[] args) {

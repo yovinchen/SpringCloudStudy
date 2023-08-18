@@ -11,4 +11,10 @@ import com.test.entity.Book;
  */
 public interface BookService {
     Book getBookById(int bid);
+
+    boolean setRemain(int uid, int i);
+
+    int getRemain(int uid);
+
+
 }

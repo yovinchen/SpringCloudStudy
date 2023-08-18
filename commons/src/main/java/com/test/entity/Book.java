@@ -14,4 +14,5 @@ public class Book {
     int bid;
     String title;
     String des;
+    int count;
 }

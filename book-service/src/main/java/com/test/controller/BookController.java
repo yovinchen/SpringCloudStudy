@@ -26,4 +26,15 @@ public class BookController {
         System.out.println("调用图书服务");
         return service.getBookById(bid);
     }
+
+    @RequestMapping("/book/remain/{bid}")
+    public int bookRemain(@PathVariable("bid") int uid){
+        return service.getRemain(uid);
+    }
+
+    @RequestMapping("/book/borrow/{bid}")
+    public boolean bookBorrow(@PathVariable("bid") int uid){
+        int remain = service.getRemain(uid);
+        return service.setRemain(uid, remain - 1);
+    }
 }
