@@ -6,3 +6,11 @@ spring:
     url: jdbc:mysql://43.143.164.194:3306/mac
     username: mac
     password: mactest
+  session:
+    # 存储类型修改为redis
+    store-type: redis
+  redis:
+    # Redis服务器的信息，该咋写咋写
+    host: 43.143.164.194
+    port: 6379
+    password: redis
