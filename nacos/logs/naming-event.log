@@ -1780,3 +1780,185 @@
 
 2023-08-21 20:25:06,597 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:ok+
 
+2023-08-21 20:33:26,806 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:33:26,806 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 
+
+2023-08-21 20:33:27,032 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid-now: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2023-08-21 20:34:09,990 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:34:09,990 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.124.5:8301_true,
+
+2023-08-21 20:34:12,095 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 1, msg: tcp:ok+
+
+2023-08-21 20:34:17,086 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 2, msg: tcp:ok+
+
+2023-08-21 20:34:22,345 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:ok+
+
+2023-08-21 20:34:55,815 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:34:55,815 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 
+
+2023-08-21 20:34:56,806 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid-now: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2023-08-21 20:35:08,761 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:35:08,761 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.124.5:8301_true,
+
+2023-08-21 20:35:11,577 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 1, msg: tcp:ok+
+
+2023-08-21 20:35:16,588 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 2, msg: tcp:ok+
+
+2023-08-21 20:35:21,585 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:ok+
+
+2023-08-21 20:43:08,361 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:43:08,361 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 
+
+2023-08-21 20:43:08,412 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:43:08,412 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 
+
+2023-08-21 20:43:08,464 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:43:08,464 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-08-21 20:43:08,518 INFO DEFAULT_GROUP@@authservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:43:08,518 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authservice, ips: 
+
+2023-08-21 20:43:11,205 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid-now: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2023-08-21 20:45:35,071 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: Chengdu, new ips size: 3, content: [192.168.124.5:8301:unknown:Chengdu_1.0_false_false_Chengdu, 192.168.137.52:8301:unknown:Chengdu_1.0_false_false_Chengdu, 172.20.10.3:8301:unknown:Chengdu_1.0_true_false_Chengdu]
+
+2023-08-21 20:45:35,074 INFO [IP-UPDATED] namespace: dd668135-0bfe-489f-ab2b-24aefb21d156, service: DEFAULT_GROUP@@borrowservice, ips: 172.20.10.3:8301_true,192.168.124.5:8301_false,192.168.137.52:8301_false,
+
+2023-08-21 20:45:35,658 INFO [IP-UPDATED] namespace: dd668135-0bfe-489f-ab2b-24aefb21d156, service: DEFAULT_GROUP@@borrowservice, ips: 172.20.10.3:8301_true,192.168.124.5:8301_false,192.168.137.52:8301_false,
+
+2023-08-21 20:45:35,659 INFO [IP-UPDATED] namespace: dd668135-0bfe-489f-ab2b-24aefb21d156, service: DEFAULT_GROUP@@borrowservice, ips: 172.20.10.3:8301_true,192.168.124.5:8301_false,192.168.137.52:8301_false,
+
+2023-08-21 20:45:37,744 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 172.20.10.3:8301@Chengdu in 1, msg: tcp:timeout
+
+2023-08-21 20:45:39,901 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 172.20.10.3:8301@Chengdu in 2, msg: tcp:timeout
+
+2023-08-21 20:45:44,029 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 172.20.10.3:8301@Chengdu, region: unknown, msg: tcp:timeout
+
+2023-08-21 20:45:45,658 INFO DEFAULT_GROUP@@authservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:45:45,659 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authservice, ips: 192.168.124.5:8500_true,
+
+2023-08-21 20:45:49,223 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:45:49,223 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.124.5:8101_true,
+
+2023-08-21 20:45:50,215 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:45:50,215 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.124.5:8301_true,
+
+2023-08-21 20:45:51,126 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 20:45:51,126 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.124.5:8201_true,
+
+2023-08-21 20:45:53,546 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 1, msg: tcp:ok+
+
+2023-08-21 20:45:58,792 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 2, msg: tcp:ok+
+
+2023-08-21 20:46:03,799 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:ok+
+
+2023-08-21 23:06:31,434 INFO DEFAULT_GROUP@@authservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:06:31,434 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authservice, ips: 
+
+2023-08-21 23:06:46,619 INFO DEFAULT_GROUP@@authservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:06:46,619 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authservice, ips: 192.168.124.5:8500_true,
+
+2023-08-21 23:16:26,308 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:16:26,308 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 
+
+2023-08-21 23:16:26,354 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:16:26,354 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 
+
+2023-08-21 23:16:26,404 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:16:26,404 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-08-21 23:16:26,460 INFO DEFAULT_GROUP@@authservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:16:26,460 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authservice, ips: 
+
+2023-08-21 23:16:27,679 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid-now: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2023-08-21 23:16:34,966 INFO DEFAULT_GROUP@@authservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:16:34,966 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authservice, ips: 192.168.124.5:8500_true,
+
+2023-08-21 23:16:36,458 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:16:36,458 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.124.5:8101_true,
+
+2023-08-21 23:16:37,632 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:16:37,632 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.124.5:8301_true,
+
+2023-08-21 23:16:37,939 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 1, msg: tcp:ok+
+
+2023-08-21 23:16:38,363 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:16:38,363 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.124.5:8201_true,
+
+2023-08-21 23:16:42,694 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 2, msg: tcp:ok+
+
+2023-08-21 23:16:47,949 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:ok+
+
+2023-08-21 23:17:17,501 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:17:17,501 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 
+
+2023-08-21 23:17:17,967 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:17:17,967 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 
+
+2023-08-21 23:17:18,081 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:17:18,081 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-08-21 23:17:22,485 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid-now: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2023-08-21 23:17:26,070 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:17:26,070 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.124.5:8201_true,
+
+2023-08-21 23:17:27,753 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:17:27,753 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.124.5:8301_true,
+
+2023-08-21 23:17:30,744 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:17:30,744 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.124.5:8101_true,
+
+2023-08-21 23:17:32,512 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 1, msg: tcp:ok+
+
+2023-08-21 23:17:37,515 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 2, msg: tcp:ok+
+
+2023-08-21 23:17:42,267 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:ok+
+
+2023-08-21 23:23:09,245 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:23:09,245 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 
+
+2023-08-21 23:23:14,238 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid-now: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:unable2connect:Connection refused
+
+2023-08-21 23:23:22,111 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.124.5:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-08-21 23:23:22,111 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.124.5:8301_true,
+
+2023-08-21 23:23:24,262 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 1, msg: tcp:ok+
+
+2023-08-21 23:23:29,267 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.124.5:8301@Chengdu in 2, msg: tcp:ok+
+
+2023-08-21 23:23:34,037 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.124.5:8301@Chengdu, region: unknown, msg: tcp:ok+
+

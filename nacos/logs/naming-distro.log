@@ -54,3 +54,5 @@ java.lang.InterruptedException: null
 
 2023-08-21 20:10:21,622 INFO [DISTRO-WARN] RecordListener not found, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userservice
 
+2023-08-21 20:45:34,789 INFO distro notifier started
+
