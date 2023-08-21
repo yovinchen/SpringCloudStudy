@@ -6,6 +6,8 @@ spring:
     url: jdbc:mysql://43.143.164.194:3306/mac
     username: mac
     password: mactest
+  application:
+    name: borrowservice
 security:
   oauth2:
     client:

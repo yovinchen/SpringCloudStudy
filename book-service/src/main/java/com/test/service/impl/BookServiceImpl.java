@@ -1,11 +1,11 @@
 package com.test.service.impl;
 
+import com.test.entity.Book;
 import com.test.mapper.BookMapper;
 import com.test.service.BookService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import com.test.entity.Book;
 
 /**
  * ClassName: BookServiceImpl
