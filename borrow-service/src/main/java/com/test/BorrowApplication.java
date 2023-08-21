@@ -3,6 +3,7 @@ package com.test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
 /**
  * ClassName: BorrowApplication
@@ -11,7 +12,7 @@ import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth
  * @author yovinchen
  * @Create 2023/8/14 16:25
  */
-@EnableOAuth2Sso
+@EnableResourceServer
 @SpringBootApplication
 public class BorrowApplication {
     public static void main(String[] args) {
