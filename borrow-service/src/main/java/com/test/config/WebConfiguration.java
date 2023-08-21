@@ -23,6 +23,7 @@ public class WebConfiguration {
     OAuth2ClientContext context;
 
     @Bean
+    @LoadBalanced
     public OAuth2RestTemplate restTemplate(){
         return new OAuth2RestTemplate(new ClientCredentialsResourceDetails(), context);
     }
