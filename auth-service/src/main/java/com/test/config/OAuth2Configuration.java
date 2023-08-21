@@ -2,6 +2,7 @@ package com.test.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
@@ -38,6 +39,7 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
                 .withClient("web")   //客户端名称，随便起就行
                 .secret(encoder.encode("654321"))      //只与客户端分享的secret，随便写，但是注意要加密
                 .autoApprove(false)    //自动审批，这里关闭，要的就是一会体验那种感觉
+                .redirectUris("http://localhost:8201/login")   //可以写多个，当有多个时需要在验证请求中指定使用哪个地址进行回调
                 .scopes("book", "user", "borrow")     //授权范围，这里我们使用全部all
                 .authorizedGrantTypes("client_credentials", "password", "implicit", "authorization_code", "refresh_token");
         //授权模式，一共支持5种，除了之前我们介绍的四种之外，还有一个刷新Token的模式
@@ -52,9 +54,13 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
                 .checkTokenAccess("permitAll()");     //允许所有的Token查询请求
     }
 
+    @Resource
+    UserDetailsService service;
+
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
-        endpoints.authenticationManager(manager);
-        //由于SpringSecurity新版本的一些底层改动，这里需要配置一下authenticationManager，才能正常使用password模式
+        endpoints
+                .userDetailsService(service)
+                .authenticationManager(manager);
     }
 }
