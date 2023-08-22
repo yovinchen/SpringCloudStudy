@@ -10,6 +10,13 @@ spring:
     name: borrowservice
 security:
   oauth2:
+    client:
+      client-id: web
+      client-secret: 654321
+      #Token获取地址
+      access-token-uri: http://localhost:8500/sso/oauth/token
+      #验证页面地址
+      user-authorization-uri: http://localhost:8500/sso/oauth/authorize
     resource:
       jwt:
         key-value: lbwnb #注意这里要跟验证服务器的密钥一致，这样算出来的签名才会一致
@@ -19,3 +26,5 @@ feign:
     enabled: true
     #同时开启负载均衡支持
     load-balanced: true
+
+

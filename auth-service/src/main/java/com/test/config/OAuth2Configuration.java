@@ -48,6 +48,7 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
         endpoints
+//                .allowedTokenEndpointRequestMethods()
                 .tokenServices(serverTokenServices())   //设定为刚刚配置好的AuthorizationServerTokenServices
                 .userDetailsService(service)
                 .authenticationManager(manager);

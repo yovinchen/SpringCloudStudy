@@ -12,7 +12,6 @@ import com.test.service.client.BookClient;
 import com.test.service.client.UserClient;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -37,15 +36,20 @@ public class BorrowServiceImpl implements BorrowService {
     @Resource
     UserClient userClient;
 
+//    @Resource
+//    OAuth2RestTemplate template;
+
     @Override
     public UserBorrowDetail getUserBorrowDetailByUid(int uid) {
         List<Borrow> borrow = mapper.getBorrowsByUid(uid);
         //这里通过调用getForObject来请求其他服务，并将结果自动进行封装
         //获取User信息
+//        User user = template.getForObject("http://userservice/user/" + uid, User.class);
         User user = userClient.getUserById(uid);
         //获取每一本书的详细信息
-        List<Book> bookList = borrow.stream()
-                .map(b -> bookClient.getBookById(b.getBid()))
+        List<Book> bookList = borrow.stream().map(b ->
+//                template.getForObject("http://bookservice/book/" + b.getBid(), Book.class))
+                bookClient.getBookById(b.getBid()))
                 .collect(Collectors.toList());
         return new UserBorrowDetail(user, bookList);
     }
